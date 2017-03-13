@@ -1,0 +1,33 @@
+{
+  "servers": [{
+    "name": "Server1",
+    "build": "1.0",
+    "ip": "0.0.0.0",
+    "host": "Host1",
+    "status": "free",
+    "frontendVersion": "Add frontend version here",
+    "backendVersion": "Add backend version here",
+    "otherVersion": "Add any other infos here",
+    "statText": "Free"
+  }, {
+    "name": "Server2",
+    "build": "1.1",
+    "ip": "0.0.0.0",
+    "host": "Host2",
+    "status": "free",
+    "frontendVersion": "Add frontend version here",
+    "backendVersion": "Add backend version here",
+    "otherVersion": "Add any other infos here",
+    "statText": "Free"
+  }, {
+    "name": "Server3",
+    "build": "1.2",
+    "ip": "0.0.0.0",
+    "host": "Host3",
+    "status": "free",
+    "frontendVersion": "Add frontend version here",
+    "backendVersion": "Add backend version here",
+    "otherVersion": "Add any other infos here",
+    "statText": "Free"
+  }]
+}

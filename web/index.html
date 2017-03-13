@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="La balise Meta DESCRIPTION décrit le contenu de la page web" />
+        <meta name="keywords" content="La balise Meta KEYWORDS regroupe les principaux mots-clés de la page web par langue" />
+        <meta name="author" content="auteur du site" />
+        <meta name="copyright" content="La balise Meta COPYRIGHT définit le copyright de la page web" />
+        <meta name="robots" content="all" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="title" content="Server Monitor" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- See http://humanstxt.org/ -->
+        <link rel="author" href="humans.txt" />
+
+        <title>Server Monitor</title>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" type="image/png" href="medias/img/favicon.ico" />
+        <!-- favicon type : .gif; .jpg; .png; .ico; -->
+        <!--[if !IE]><-->
+            <!--<link rel="icon" type="image/png" href="medias/img/favicon.ico" />->
+        <!--<![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="css/gen.css" />
+        <link rel="stylesheet" type="text/css" href="css/libs/switch.css" />
+    </head>
+<body>
+	<div id="background">
+	<div id="top">
+    <div id="labels">
+      <p>Name</p>
+      <p>Version</p>
+      <p>IP Address</p>
+      <p>Host</p>
+      <p>Comments</p>
+    </div>
+		<div id="buttons">
+			<img id="removeServerButton" src="medias/img/remove.png" onclick="displayWarning()"></img>
+			<img id="addServerButton" src="medias/img/add.png" onclick="displayAdd()"></img>
+			<div id="addServer">
+				<div class="hidden" id="input">
+					<input id="addName" name="addName" placeholder="Name"></p>
+					<input id="addBuild" name="addBuild" placeholder="Build"></p>
+					<input id="addIp" name="addIp" placeholder="IP"></p>
+					<input id="addHost" name="addHost" placeholder="Host"></p>
+					<button id="addButton" type="button" onclick="addServer(this)">Add</button>
+					<button id="cancelButton" type="button" onclick="displayAdd()">Cancel</button>
+				</div>
+			</div>
+		</div>
+  </div>
+  <div id="main">
+		<div class="serverList">
+			<!-- Server DIV Example -->
+			<!-- <div class="server" id="0">
+        <img class="serverImg" src="medias/img/selectedServer.png">
+        <p id="name" contenteditable="true">sdfg</p>
+        <p id="build" contenteditable="true">sdfg</p>
+        <p id="ip" contenteditable="true">sdfg</p>
+        <p id="host" contenteditable="true">sdfg</p>
+        <div class="switch">
+          <input type="radio" class="switch-input" name="server0" value="free0" id="free0">
+          <label for="free0" class="switch-label switch-label-free">Free</label>
+          <input type="radio" class="switch-input" name="server0" value="busy0" id="busy0">
+          <label for="busy0" class="switch-label switch-label-busy">Busy</label>
+          <span class="switch-selection"></span>
+        </div>
+        <p id="statText" contenteditable="true">undefined</p>
+      </div>
+			-->
+		</div>
+	</div>
+
+	<!-- div id="bottom">
+		<div class="serverInfos">
+			<div class="frontend">
+				<p>Frontend: </p>
+				<p class="additionalInfos" id="frontendVersion" contenteditable="true" onclick="activateEditServerInfos(this)" onblur="editServerInfos(this)"></p>
+			</div>
+			<div class="backend">
+				<p>Backend: </p>
+				<p class="additionalInfos" id="backendVersion" contenteditable="true" onclick="activateEditServerInfos(this)" onblur="editServerInfos(this)"></p>
+			</div>
+			<div class="other">
+				<p>Other: </p>
+				<p class="additionalInfos" id="otherVersion" contenteditable="true" onclick="activateEditServerInfos(this)" onblur="editServerInfos(this)"></p>
+			</div>
+			<div class="panel" id="systemPanel">
+				systemPanel
+			</div>
+			<div class="panel" id="contentPanel">
+				<p>Insert content path here:</p>
+				<input type="file" id="ctrl" webkitdirectory directory multiple/>
+			</div-->
+		</div>
+  </div>
+</body>
+
+	<script src="js/libs/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="js/libs/jquery.mousewheel.min.js" type="text/javascript"></script>
+	<script src="js/func/listeners.js" type="text/javascript"></script>
+	<script src="js/variables.js" type="text/javascript"></script>
+	<script src="js/func/createServerElements.js" type="text/javascript"></script>
+	<script src="js/func/editServer.js" type="text/javascript"></script>
+	<script src="js/func/server.js" type="text/javascript"></script>
+	<script src="js/init.js" type="text/javascript"></script>
+</html>

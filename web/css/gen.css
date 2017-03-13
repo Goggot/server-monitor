@@ -1,0 +1,141 @@
+body, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    font-family: Brandon Grotesque, sans-serif;
+    font-size: 13px;
+    /*background-image: url("../medias/img/bg.png");
+    color: rgb(200, 200, 200);*/
+}
+.hidden {
+    display: none;
+}
+
+
+/*** TOP ***/
+
+#top {
+    height:30px;
+    width: 100%;
+}
+#labels{
+    margin-top: 8px;
+    margin-left: 119px;
+    float: left;
+}
+#labels p{
+    float: left;
+    margin-right: 120px;
+}
+#buttons {
+  float:inline-block;
+}
+#addServerButton {
+    width: 30px;
+    cursor: pointer;
+    float:right;
+    opacity: 0.5;
+}
+#addServerButton:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+#addServer #input {
+    display: none;
+    position: absolute;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: grey;
+    z-index: 1000;
+}
+#addServer #input input {
+    margin: 2px;
+}
+#removeServerButton {
+    width: 30px;
+    cursor: pointer;
+    float:right;
+    opacity: 0.5;
+}
+#removeServerButton:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+
+/*** SERVER LIST ***/
+
+#main {
+    width: 100%;
+}
+.serverList .server {
+    background-color: #F2F2F2;
+    margin: 1px;
+    height: 45px;
+    font-weight: bold;
+    padding-top: 5px;
+    position: relative;
+}
+.server img {
+    float: left;
+    margin: 0px 50px 0px 25px;
+}
+.server p {
+    float: left;
+    width: 150px;
+    padding-left: 10px;
+    margin-top: 12px;
+}
+.server div {
+    float: left;
+    margin-top: 6px;
+    margin-right: 25px;
+}
+.serverList .server #statText {
+    color: #FF8400;
+    width: 25%;
+}
+.serverList .switch {
+    color: #70a5ca;
+    float: right;
+}
+img.serverImg {
+    width: 33px;
+    cursor: pointer;
+}
+img.serverImg:hover {
+    opacity: 0.75;
+    transition: 0.3s ease-in-out;
+}
+
+
+/*** BOTTOM ***/
+
+.serverInfos {
+    border: dashed 1px;
+    height: 40px;
+}
+.serverInfos p {
+    float: left;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+.serverInfos div {
+    margin-left: 50px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+.panel {
+    margin: 30px 5px 0 5px;
+    border: dotted 1px;
+    text-align: center;
+}
+.p1, .p2, .p3 {
+    float: left;
+}
+.additionalInfos {
+    color: #70a5ca;
+}

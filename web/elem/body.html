@@ -1,0 +1,71 @@
+<body>
+	<div id="background">
+	<div id="top">
+    <div id="labels">
+      <p>Name</p>
+      <p>Version</p>
+      <p>IP Address</p>
+      <p>Host</p>
+      <p>Comments</p>
+    </div>
+		<div id="buttons">
+			<img id="removeServerButton" src="medias/img/remove.png" onclick="displayWarning()"></img>
+			<img id="addServerButton" src="medias/img/add.png" onclick="displayAdd()"></img>
+			<div id="addServer">
+				<div class="hidden" id="input">
+					<input id="addName" name="addName" placeholder="Name"></p>
+					<input id="addBuild" name="addBuild" placeholder="Build"></p>
+					<input id="addIp" name="addIp" placeholder="IP"></p>
+					<input id="addHost" name="addHost" placeholder="Host"></p>
+					<button id="addButton" type="button" onclick="addServer(this)">Add</button>
+					<button id="cancelButton" type="button" onclick="displayAdd()">Cancel</button>
+				</div>
+			</div>
+		</div>
+  </div>
+  <div id="main">
+		<div class="serverList">
+			<!-- Server DIV Example -->
+			<!-- <div class="server" id="0">
+        <img class="serverImg" src="medias/img/selectedServer.png">
+        <p id="name" contenteditable="true">sdfg</p>
+        <p id="build" contenteditable="true">sdfg</p>
+        <p id="ip" contenteditable="true">sdfg</p>
+        <p id="host" contenteditable="true">sdfg</p>
+        <div class="switch">
+          <input type="radio" class="switch-input" name="server0" value="free0" id="free0">
+          <label for="free0" class="switch-label switch-label-free">Free</label>
+          <input type="radio" class="switch-input" name="server0" value="busy0" id="busy0">
+          <label for="busy0" class="switch-label switch-label-busy">Busy</label>
+          <span class="switch-selection"></span>
+        </div>
+        <p id="statText" contenteditable="true">undefined</p>
+      </div>
+			-->
+		</div>
+	</div>
+
+	<!-- div id="bottom">
+		<div class="serverInfos">
+			<div class="frontend">
+				<p>Frontend: </p>
+				<p class="additionalInfos" id="frontendVersion" contenteditable="true" onclick="activateEditServerInfos(this)" onblur="editServerInfos(this)"></p>
+			</div>
+			<div class="backend">
+				<p>Backend: </p>
+				<p class="additionalInfos" id="backendVersion" contenteditable="true" onclick="activateEditServerInfos(this)" onblur="editServerInfos(this)"></p>
+			</div>
+			<div class="other">
+				<p>Other: </p>
+				<p class="additionalInfos" id="otherVersion" contenteditable="true" onclick="activateEditServerInfos(this)" onblur="editServerInfos(this)"></p>
+			</div>
+			<div class="panel" id="systemPanel">
+				systemPanel
+			</div>
+			<div class="panel" id="contentPanel">
+				<p>Insert content path here:</p>
+				<input type="file" id="ctrl" webkitdirectory directory multiple/>
+			</div-->
+		</div>
+  </div>
+</body>
